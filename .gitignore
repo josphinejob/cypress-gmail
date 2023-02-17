@@ -229,7 +229,7 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,cypressio
 
 .npmrc
-cypress.json
+cypress.config.js
 artifacts/
 package-lock.json
 mochawesome.json

@@ -17,6 +17,9 @@ Local test repository:
 To run the test suite, there are 2 options.
 
 1. yarn test - Opens the Cypress Test Runner with open command which is useful for development and debugging.
-2. yarn open - Run tests headless using test command
-3. generate-report - Generates a combined report in HTML format
+2. yarn open - Run tests in e2e directory headless using test command and generates report
+3. yarn api-test - Run tests in api directory and generates report
+3. yarn api-open - Opens runner for api directory
 To see the definitions of all commands, see "scripts" property in package.json.
+
+Reporter - Mochawesome
