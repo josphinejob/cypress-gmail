@@ -18,8 +18,18 @@ To run the test suite, there are 2 options.
 
 1. yarn test - Opens the Cypress Test Runner with open command which is useful for development and debugging.
 2. yarn open - Run tests in e2e directory headless using test command and generates report
-3. yarn api-test - Run tests in api directory and generates report
-3. yarn api-open - Opens runner for api directory
+3. yarn test-api - Run tests in api directory and generates report
+3. yarn open-api - Opens runner for api directory
 To see the definitions of all commands, see "scripts" property in package.json.
 
 Reporter - Mochawesome
+
+# API testing with cypress:
+
+* Request command syntax
+
+cy.request(url)
+cy.request(url, body)
+cy.request(method, url)
+cy.request(method, url, body)
+cy.request(options)

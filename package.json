@@ -10,8 +10,8 @@
     "clean": "rm -rf artifacts/* mochawesome.json mochawesome-report/*",
     "test": "yarn clean && cp cypress.web.config.js cypress.config.js && yarn cypress run ; yarn generate-report",
     "open": "yarn clean && cp cypress.web.config.js cypress.config.js && yarn cypress open",
-    "api-test": "yarn clean && cp cypress.api.config.js cypress.config.js && yarn cypress run ; yarn generate-report",
-    "api-open": "yarn clean && cp cypress.api.config.js cypress.config.js && yarn cypress open",
+    "test-api": "yarn clean && cp cypress.api.config.js cypress.config.js && yarn cypress run ; yarn generate-report",
+    "open-api": "yarn clean && cp cypress.api.config.js cypress.config.js && yarn cypress open",
     "generate-report": "npx mochawesome-merge \"artifacts/reports/*.json\" > mochawesome.json && npx marge mochawesome.json"
   },
   "repository": {

@@ -3,10 +3,8 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     chromeWebSecurity: false,
-    viewportWidth: 1280,
-    viewportHeight: 800,
     excludeSpecPattern: "cypress/e2e/demoqa/*.cy.js",
-    baseUrl: "https://www.boredapi.com/api/activity",
+    baseUrl: null,
     reporter: "mochawesome",
     reporterOptions: {
       reportDir: "artifacts/reports",
